@@ -18,10 +18,10 @@
     --clr-grey-4: #6e6e6e;
     --clr-grey-5: #808080;
     --clr-grey-6: #8c8c8c;
-    --clr-grey-7: #989898;
-    --clr-grey-8: #a4a4a4;
-    --clr-grey-9: #b1b1b1;
-    --clr-grey-10: #bdbdbd;
+    --clr-grey-7: #9e9e9e;
+    --clr-grey-8: #ababab;
+    --clr-grey-9: #bbbbbb;
+    --clr-grey-10: #cdcbcb;
 
     --clr-white: #fff;
     --clr-light: beige;
@@ -42,7 +42,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #008080;
 }
 
 body {
@@ -222,4 +221,75 @@ p {
         align-items: center;
     }
 }
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-grey-10);
+    z-index: 4;
+    display: grid;
+    place-items: center;
+    transition: var(--transition);
+    transform: translateX(-100%);
+}
+
+.show-sidebar {
+    transform: translateX(0);
+}
+
+.sidebar-links {
+    text-align: center;
+}
+
+.sidebar-links a {
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: var(--transition);
+    color: var(--clr-grey-1);
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.sidebar-links a:hover {
+    color: var(--clr-prim-5);
+}
+
+.social-icons {
+    display: grid;
+    margin-top: 3rem;
+    width: 20rem;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: var(--clr-grey-1);
+    transition: var(--transition);
+}
+
+.social-icon:hover {
+    color: var(--clr-prim-5)
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    background: transparent;
+    border: transparent;
+    transition: var(--transition);
+    color: var(--clr-grey-1);
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: var(--clr-prim-5);
+}
+
 
