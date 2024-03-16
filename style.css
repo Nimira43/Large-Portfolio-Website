@@ -625,7 +625,7 @@ p {
 
 .video-text {
     max-width: 30rem;
-    color: var(--clr-grey-1)
+    color: var(--clr-prim-1)
 }
 
 .video-banner {
@@ -639,4 +639,83 @@ p {
     clip-path: polygon(50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
 }
 
+@media screen and (min-width: 768px) {
+    .skills-center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
 
+.skills {
+    background: var(--clr-prim-10);    
+}
+
+.skills h3 {
+    margin: 1.5rem 0;
+    color: var(--clr-prim-1);
+}
+
+.skill {
+    margin-bottom: 1.25rem;
+}
+
+.skill p {
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    color: var(--clr-prim-1)
+}
+
+.skill-container {
+    background-color: var(--clr-white);
+    height: 1rem;
+    width: 100%;
+    border-radius: var(--radius);
+    position: relative;
+}
+
+.skill-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--clr-prim-5);
+    height: 100%;
+    width: 90%;
+    border-radius: var(--radius);
+}
+
+.value-87 {
+    width: 87%;
+}
+.value-71 {
+    width: 71%;
+}
+.value-92 {
+    width: 92%;
+}
+.value-93 {
+    width: 93%;
+}
+
+.skill-text {
+    position: absolute;
+    top: -2rem;
+    left: 90%;
+    transform: translateX(-50%);
+}
+
+.skill-text-87 {
+    left: 87%;
+}
+
+.skill-text-71 {
+    left: 71%;
+}
+
+.skill-text-92 {
+    left: 92%;
+}
+
+.skill-text-93 {
+    left: 93%;
+}
