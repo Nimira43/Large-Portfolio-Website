@@ -14,4 +14,4 @@ window.addEventListener('scroll', () => {
 
 navBtn.addEventListener('click', () => sidebar.classList.add('show-sidebar'))
 closeBtn.addEventListener('click', () => sidebar.classList.remove('show-sidebar'))
-// date.innerHTML = new Date().getFullYear()
+date.innerHTML = new Date().getFullYear()
