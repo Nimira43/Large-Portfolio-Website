@@ -878,7 +878,7 @@ p {
 }
 
 .footer .social-icon:hover {
-    color: var(--clr-prim-10);
+    color: var(--clr-prim-1);
 }
 
 .footer p {
@@ -887,3 +887,25 @@ p {
     color: var(--clr-white);
 }
 
+.single-page {
+    background: var(--clr-prim-10);
+    min-height: calc(100vh - 5rem - 198px);
+}
+
+.page-info {
+    max-width: 700px;
+}
+
+.page-info p {
+    color: var(--clr-grey-1);
+}
+
+.page-info a {
+    text-transform: uppercase;
+    color: var(--clr-prim-5);
+    transition: var(--transition);
+}
+
+.page-info a:hover {
+    color: var(--clr-prim-1);
+}
